@@ -1,0 +1,139 @@
+    .cursor{
+            cursor:pointer;
+        }
+     .cursor_type:hover{
+        cursor:pointer;
+      font-size: 18px;
+     }
+     
+    .text{
+        margin: 0;
+        padding:5px;
+        outline:none;
+        border:2px solid black;
+        border-radius:5px;
+        position:relative;
+        background:transparent;
+    }
+    .textlabel{
+        position:absolute;
+        top:4px;
+        left:30px;
+        font-size:17px;
+        pointer-events: none;
+        transition:0.3s;
+    }
+    input[type="text"]:focus~label,input[type="text"]:valid~label{
+        top:-10px;
+        left:25px;
+        background: white;
+        font-size:13px;
+        padding:1px;
+        transition:0.3s;
+    }
+    textarea:focus~label,textarea:valid~label{
+        outline:none;
+        top:-11px;
+        left:25px;
+        background:white;
+        padding:2px;
+        font-size: 13px;
+        transition:0.3s;
+    }
+
+    .textarea{
+        outline:none;
+        border:2px solid black;
+        border-radius:7px;
+        padding:10px;
+        margin-bottom: 12px;
+        border-color:disabled;
+        width:100%;
+        background:transparent;
+    }
+    .textarealabel{
+        font-weight: bold;
+        font-size:17px;
+        color:purple;   
+        position:absolute;
+        margin-bottom:0px;
+        top:10px;
+        left:30px;
+        pointer-events: none;
+        transition:0.3s;
+    }
+    /*#targetTexteng{
+        background: lightgrey;
+        border-radius: 7px;
+    }
+    #targetTexteEngmean{
+        background: lightgrey;
+        border-radius: 7px;   
+    }*/
+    .pad_cols{
+        padding-bottom:12px;
+    }
+    .pad_cols_word{
+        padding-bottom: 12px;
+    }
+    .pad_chkbox{
+        padding-bottom: 12px;
+    }
+    ::placeholder{
+        color: purple;
+    }
+    .form-control:focus{
+        border-color:black;
+        outline:0;
+        box-shadow:none;
+    }
+    .border{
+        outline:none;
+        border:2px solid black;
+        border-radius:7px;
+        padding:8px;
+    }
+    input[type=checkbox]:checked~label{
+        color:blue;
+        background-color:#e1bee7;
+        border-radius:2px;
+    }
+    .button{
+        outline:none;
+        border:2px solid black;
+        border-radius:7px;
+        padding:5px;
+        height:35px;
+        background:transparent;
+        color:purple;
+        font-weight: bold;
+    }
+    .color_link{
+        color:black;
+    }
+    .color_link:hover{
+        color:blue;
+    }
+    .bck_heading{
+        background-color:lightgrey;
+    }
+
+    .other{
+        padding-top:5px;
+    }
+    .other input{
+        border-radius: 8px;
+        outline:none;
+        border:1.8px solid black;
+        padding:3px;
+    }
+    .strongtxtbox{
+        color:purple;
+    }
+    .txtboxother{
+        padding-top:5px;
+    }
+    .pad_wordt{
+        padding:2.5px;
+    }
+    

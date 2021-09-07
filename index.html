@@ -1,0 +1,253 @@
+<html>
+    <head>
+            <title>Responsive design</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="css/index.css">
+            <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+	function ClearFields(){
+	document.getElementById("targetTexteEngmean").innerHTML="";
+	document.getElementById("targetTexteng").innerHTML="";
+	document.getElementById("targetTexteng").style.display="none";
+	document.getElementById("targetTexteEngmean").style.display="none";
+}
+</script>
+</head>
+
+<body style="position:relative">
+    <form>
+        <fieldset><b><legend  class="bck_heading" style="font-size:40px;text-align:center;color:purple;padding:20px;margin-bottom: 0px;">Word Explorer</legend></b><br>
+        <div class="container"><br>
+            <div class="row">
+                <!-- <div class="col-sm-2">
+                <div class="col-sm-12 pad_cols">
+                        <label style="font-size:17px;text-decoration:none;color:purple"><span class="glyphicon glyphicon-calendar"></span> calender</label>
+                </div>
+            </div> -->
+                <div class="col-sm-4 pad_cols_word">
+                     <input class=" text col-sm-12" type="text" id="engword" required>
+                     <label style="color:purple;font-weight: bold;" class="textlabel">English word</label>
+                </div>
+                <div class="col-sm-4 pad_cols col-md-4">
+                	<!-- <div class="col-sm-2"></div> -->
+                	<div class="col-sm-12">
+                        <div style="font-size: 17px">
+                            <span class="cursor_type" id="pronoun">
+                        <div class="glyphicon glyphicon-volume-up" style="color:purple"></div> <label style="color:purple;cursor: pointer"> Pronunciation</label>
+                    </span>
+                        <!-- <span class="glyphicon glyphicon-volume-up cursor_type" id="pronoun" style="color:purple;font-size: 16px"><b>Pronunciation link</b></span> -->
+                    </div>
+                </div>
+            </div>
+                <div class="col-sm-4">
+                    <!--<div>
+                    <div class="col-sm-6" style="padding:0px 0px 12px 0px">-->
+                        <div style="padding:0 0 12 0px">
+                        <button type="button" class="button" style="padding:0 10px;margin-right:25px" id="submit" ><b>Submit</b></button>
+                    <!--</div>
+                    <div class="col-sm-6" style="padding:0px 0px 12px 0px">-->
+                        <!--<button type="button" class="button"  style="padding:0 10px"><b>Cancel</b></button>
+                        --><input class="button" type="reset" value="Cancel" onclick="ClearFields();">
+                    <!--</div>
+                </div>-->
+            </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                    <div class="col-sm-4 pad_chkbox">
+                    <div class="border col-sm-12">
+                            <h4 class="heading" style="color:purple"><b>Dictionary Reference</b></h4>
+                    	    <div>
+                        	<input type="checkbox" id="Oxford">
+                        	<label class="color_link cursor" onclick="wordReference('Oxford')">Oxford</label><br>
+                        	</div>
+                        	<div>
+                       	    <input type="checkbox" id="Merriam">
+                            <label class="color_link cursor" onclick="wordReference('Merriam')">Merriam</label><br>                        
+                        	</div>
+                    	    <div>
+                            <input type="checkbox" id="Dictionary">
+                            <label class="color_link cursor" onclick="wordReference('Dictionary')">Dictionary</label><br>                        
+                        	</div>
+                        	<div>
+                            <input type="checkbox" id="Cambridge">
+                            <label class="color_link cursor" onclick="wordReference('Cambridge')">Cambridge</label><br>                    
+                        	</div><br>
+                    </div>
+                    </div>
+                    <div class="col-sm-8 pad_chkbox">
+                    <div class="border col-sm-12">
+                        <h4 style="color:purple;text-align: center"><b>Parts of speech</b></h4>
+                        <div class="row"><br>
+                        	<div class="col-sm-4">
+                            <div><input type="checkbox" id="Noun">
+                            <label class="pad_wordt" onclick="wordType('Noun')">Noun</label><br></div>
+                            <div><input type="checkbox" id="Verb">
+                            <label class="pad_wordt" onclick="wordType('Verb')">Verb</label><br></div>   
+                            <div><input type="checkbox" id="Adjective">
+                            <label class="pad_wordt" onclick="wordType('Adjective')">Adjective</label><br></div> 
+                            </div>
+                            <div class="col-sm-4">
+                            <div><input type="checkbox" id="Adverb">
+                            <label class="pad_wordt" onclick="wordType('Adverb')">Adverb</label><br></div>
+                            <div><input type="checkbox" id="Preposition">
+                            <label class="pad_wordt" onclick="wordType('Preposition')">Preposition</label><br></div>
+                            <div><input type="checkbox" id="Pronoun">
+                            <label class="pad_wordt" onclick="wordType('Pronoun')">Pronoun</label><br></div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div><input type="checkbox" id="Article">
+                            <label class="pad_wordt" onclick="wordType('Article')">Article</label><br></div>
+                            <div><input type="checkbox" id="Conjunction">
+                            <label class="pad_wordt" onclick="wordType('Conjunction')">Conjunction</label><br></div>
+                            <div><input type="checkbox" id="Interjection">
+                            <label class="pad_wordt" onclick="wordType('Interjection')">Interjection</label><br></div>  
+                        </div>
+                        </div><br>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 pad_chkbox">
+                            <div class="border col-sm-12">
+                                <h4 style="color:purple"><b>English meaning</b></h4>
+                             <div>
+                            <input type="checkbox" id=E_Oxford>
+                            <label>Oxford</label><br>
+                            </div>
+                            <div>
+                            <input type="checkbox" id=E_Merriam>
+                            <label>Merriam</label><br>
+                            <textarea class="col-sm-12 col-md-12 col-xs-12" id="targetTexteEngmean" rows="4" style="display: none;border:solid 1.8px black"></textarea>
+                            </div>
+                            <div>
+                            <input type="checkbox" id=E_Dictionary>
+                            <label>Dictionary</label><br>
+                            <!-- <textarea class="col-sm-12 col-md-12" id="targetTexteEngmean" rows="4" cols="50" style="display: none"></textarea> -->
+                            <!--<div id="targetTexteEngmean1"></div>
+                            <div id="targetTexteEngmean2"></div>
+                            <div id="targetTexteEngmean3"></div>-->
+                          
+                            </div>
+                            <div>
+                            <input type="checkbox" id=E_Cambridge>
+                            <label>Cambridge</label><br>
+                            </div>
+                            <!-- <div>
+                               <input type="checkbox" id="Em_other" onclick="other_Em(this)"/><strong>Other</strong>
+
+								<div id="Em_otherchkbox" style="display: none" class="other">
+    							<strong class="strongtxtbox">Type here:</strong>
+    							<input type="text" id="txt" class="col-sm-12 col-md-10" />
+								</div>
+                            </div> -->
+                        </div>
+                        </div>
+
+                        <div class="col-sm-6 pad_chkbox">
+                                <div class="border col-sm-12">
+                                    <h4 style="color:purple"><b>Tamil meaning</b></h4>
+                                        <div>
+                                        <input type="checkbox" id=T_Oxford>
+                                        <label>Oxford</label><br>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" id=T_Merriam>
+                                        <label>Merriam</label><br>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" id=T_Dictionary>
+                                        <label>Dictionary</label><br>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" id=T_Cambridge>
+                                        <label>Cambridge</label><br>
+                                        </div>
+                                        <!-- <div>
+                               <input type="checkbox" id="Tm_other" onclick="other_Tm(this)"/><strong>Other</strong>
+
+								<div id="Tm_otherchkbox" style="display: none" class="other">
+    							<strong class="strongtxtbox">Type here:</strong>
+    							<input type="text" id="txt" class="col-sm-12 col-md-10"/>
+								</div>
+                            </div> -->
+                            </div>
+                            </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-6 pad_chkbox">
+                                <div class="border col-sm-12">
+                       <h4 style="color:purple"><b>English sentence</b></h4>
+                                        <div>
+                                        <input type="checkbox" id=Es_Oxford>
+                                        <label>Oxford</label><br>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" id=Es_Merriam>
+                                        <label>Merriam</label><br>
+                                        <textarea id="targetTexteng" class="col-md-12 col-sm-12 col-xs-12" rows="4" style="display: none;border:solid 1.8px black"></textarea>
+
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" id=Es_Dictionary>
+                                        <label>Dictionary</label><br>
+                                        <!--<div id="targetTexteng1"></div>
+                                        <div id="targetTexteng2"></div>
+                                        <div id="targetTexteng3"></div>-->
+                                        
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" id=Es_Cambridge>
+                                        <label>Cambridge</label><br>
+                                        </div>
+                                        <!-- <div>
+                               <input type="checkbox" id="Es_other" onclick="other_Es(this)"/><strong>Other</strong>
+
+								<div id="Es_otherchkbox" style="display: none" class="other">
+    							<strong class="strongtxtbox">Type here:</strong>
+    							<input type="text" id="txt"/>
+								</div>
+                            </div> -->
+                    </div>           
+                    </div>
+                <div class="col-sm-6 pad_chkbox">
+                                <div class="border col-sm-12">
+                                       <h4 style="color:purple"><b>Tamil sentence</b></h4>  
+                                        <div>
+                                        <input type="checkbox" id=Ts_Oxford>
+                                        <label>Oxford</label><br>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" id=Ts_Merriam>
+                                        <label>Merriam</label><br>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" id=Ts_Dictionary>
+                                        <label>Dictionary</label><br>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" id=Ts_Cambridge>
+                                        <label>Cambridge</label><br>
+                                        </div>
+                                        <!-- <div>
+                               <input type="checkbox" id="Ts_other" onclick="other_Ts(this)"/><strong>Other</strong>
+
+								<div id="Ts_otherchkbox" style="display: none" class="other">
+    							<strong class="strongtxtbox">Type here:</strong>
+    							<input type="text" id="txt"/>
+								</div>
+                            </div> -->
+                    </div>           
+                    </div>
+            </div>
+        
+        </fieldset>
+    </form>
+
+</body></html>
